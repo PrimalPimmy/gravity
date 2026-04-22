@@ -229,7 +229,7 @@ impl State {
 
             // NEW!
             render_pass.set_pipeline(&self.render_pipeline); // 2.
-            render_pass.draw(0..6, 0..1);
+            render_pass.draw(0..300, 0..2);
         }
 
         self.queue.submit(iter::once(encoder.finish()));
